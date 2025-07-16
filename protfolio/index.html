@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    /* Error message styling */
     .error-message {
       color: red;
       font-size: 14px;
@@ -20,7 +19,7 @@
 
 <body>
 
-  <!-- Navigation -->
+
   <nav class="navbar">
     <div class="navbar-inner">
       <img src="photos/download (1).jpg" alt="logo" class="logo" />
@@ -39,7 +38,7 @@
     </div>
   </nav>
 
-  <!-- Header -->
+ 
   <div id="header">
     <div class="container">
       <div class="header-bg-blur"></div>
@@ -50,7 +49,7 @@
     </div>
   </div>
 
-  <!-- About -->
+  
   <div id="about">
     <div class="container">
       <div class="row">
@@ -83,7 +82,6 @@
     </div>
   </div>
 
-  <!-- Contact -->
   <div id="contact">
     <div class="container">
       <div class="row">
@@ -113,16 +111,16 @@
     </div>
   </div>
 
-  <!-- Footer -->
+
   <footer>
     <div class="container">
       <p>© 2025 Rishitha. Made with ❤️ by me.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
+ 
   <script>
-    // Tab switching
+   
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -137,7 +135,7 @@
       document.getElementById(tabname).classList.add("active-tab");
     }
 
-    // Form submission to Google Sheet
+    
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyJcuSrkQ-l4Bif3Igvb2JYQZmzatfCe_QuKuP_VsQs2Giy1bSr5eNQ4jAGSh2Xbt24/exec';
     const form = document.forms['submit-to-google-sheet'];
     const msg = document.getElementById("msg");
@@ -155,7 +153,6 @@
         .catch(error => console.error('Error!', error.message));
     });
 
-    // Contact number validation
     function validateForm() {
       const contactInput = document.getElementById("contact-number");
       const errorMsg = document.getElementById("contact-error");
